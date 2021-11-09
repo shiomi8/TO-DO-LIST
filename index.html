@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <video src="videos/fondo.mp4" autoplay loop muted></video>
+      <div class="contenedor">
+        <div class="meses">
+          <a href="#"><div class="btn enero">ENE</div></a>
+          <a href="#"><div class="btn febrero">FEB</div></a>
+          <a href="#"><div class="btn marzo">MAR</div></a>
+          <a href="#"><div class="btn abril">ABR</div></a>
+          <a href="#"><div class="btn mayo">MAY</div></a>
+          <a href="#"><div class="btn junio">JUN</div></a>
+          <a href="#"><div class="btn julio">JUL</div></a>
+          <a href="#"><div class="btn agosto">AGO</div></a>
+          <a href="#"><div class="btn setiembre">SET</div></a>
+          <a href="#"><div class="btn octubre">OCT</div></a>
+          <a href="#"><div class="btn novienbre">NOV</div></a>
+          <a href="#"><div class="btn diciembre">DIC</div></a>
+        </div>
+        <div class="main-container">
+          
+          <div class="new-task">
+            <div class="contenedor-bucar">
+              <div class="buscar">
+                <input id="search-input" type="text" placeholder="Buscar">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <h1 class="titulo">Pendientes</h1>
+            <div class="edid">
+              <input class="title-task" id="title-task" type="text" placeholder="Título de la tarea" />
+              <textarea class="text" id="description-task" type="text" placeholder="Descripción de la tarea"></textarea>
+              <button id="save-btn">Guardar</button>
+            </div>
+          </div>
+          <div class="list-tasks">
+            <div class="list" id="list-container"></div>
+          </div>
+        </div>
+        <dialog id="task-detail-dialog">
+          <div class="dialog">
+            <div class="task-detail">
+              <div id="close-dialog" class="close-dialog"><i class="fas fa-times"></i></div>
+              <div id="task-detail"></div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+      
+    </div>
+    
+    <script src="js/crud.js"></script>
+  </body>
+</html>
